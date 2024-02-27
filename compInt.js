@@ -9,6 +9,11 @@ let intr = document.querySelector(".int")
 let btn = document.querySelector(".btn")
 let ans = document.querySelector(".ans")
 
+pv.addEventListener("input",()=>{
+    
+         fv.disabled = true
+      })
+
 
 btn.addEventListener("click",()=>{
    fv.value = compInt() 
@@ -21,7 +26,9 @@ let pValue = parseInt(pv.value)
      let fValue = parseInt(fv.value)
       let intR = parseInt(intr.value)
        let yR = parseInt(yr.value)
-       if(pValue)
+    
+    
+       
        
 let result = (1+(intR/100))**(yR)
 
