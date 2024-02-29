@@ -31,8 +31,13 @@ let pValue = parseInt(pv.value)
        
        
 let result = (1+(intR/100))**(yR)
+let finalResult = pValue * result 
+ans.innerHTML += `<div>
+  ${finalResult.toFixed(2)} = ${pValue } x (1 + ${intR/100})^${yR}
 
-return pValue * result 
+<div/>`
+
+return finalResult.toFixed(2)
 
 
     
